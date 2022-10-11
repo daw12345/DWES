@@ -9,8 +9,8 @@
 	border-width: thick;
 	}
 	.ima{
-	width: 200px;
-	height: 250px;
+	width: 80%;
+	height: 80%;
 	}
 	.centrado{
 	text-align: center;
@@ -36,11 +36,12 @@
 	//recorrer el resultado
 	while ($row = mysqli_fetch_array($result)) {
 	echo  '<tr>';
-	echo '<td class="centrado"><a href="/detail.php?id='.$row[0];
-	echo '">'.$row[0].'</a></td>';
+	echo '<td class="centrado">'.$row[0];
+	echo '</td>';
 	echo '<td class="centrado">'.$row[1].'</td>';
-	echo '<td><img class="ima" src="'.$row[2];
-	echo '" width="200" height="200" >';
+	echo '<td class="centrado"><a href="/detail.php?id='.$row[0];
+	echo '"><img class="ima" src="'.$row[2];
+	echo '" width="200" height="200" ></a>';
 	echo '</td>';
 	echo '<td class="centrado">'.$row[3].'</td>';
 	echo '<td class="centrado">'.$row[4].'</td>';
