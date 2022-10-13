@@ -39,7 +39,7 @@
 	echo '<td class="centrado">'.$row[0];
 	echo '</td>';
 	echo '<td class="centrado">'.$row[1].'</td>';
-	echo '<td class="centrado"><a href="/detail.php?id='.$row[0];
+	echo '<td class="centrado"><a href="/detail.php?pelicula_id='.$row[0];
 	echo '"><img class="ima" src="'.$row[2];
 	echo '" width="200" height="200" ></a>';
 	echo '</td>';
