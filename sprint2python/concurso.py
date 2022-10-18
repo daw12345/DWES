@@ -2,7 +2,7 @@
 import random
 
 #definimos la funcion para escoger la pregunta
-def fquestion (random):
+def fquestion (num):
 
 # Ponemos la puntuación a 0
     score=0
@@ -67,9 +67,8 @@ def fquestion (random):
 
 
         print(" ")
-
-#mostramos la puntuación final
-        print("Su puntuación final es: ",score)
+        
+    return score
 
 num1=random.randint(1,3)
 score1=fquestion(num1)
@@ -77,5 +76,6 @@ num2=random.randint(1,3)
 while num1==num2:
     num2=random.randint(1,3)
 score2=fquestion(num2)
-print("La puntuación obtenida es: ",(score1+score2))
+
+print("La puntuación obtenida es: ",(str(score1 + score2)))
 
