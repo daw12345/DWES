@@ -5,6 +5,11 @@ $db = mysqli_connect('localhost', 'root', '1234', 'mysitedb') or die('Fail');
 <html>
 <body>
 <?php
+ session_start();
+$user_id_a_insertar = 'NULL';
+if (!empty($_SESSION['user_id'])) {
+$user_id_a_insertar = $_SESSION['user_id'];
+}
 $pelicula_id = $_POST['pelicula_id'];
 $comentario = $_POST['new_comment'];
 $query = "INSERT INTO tComentarios(comentario, usuario_id, pelicula_id, fecha)
