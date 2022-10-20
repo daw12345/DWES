@@ -18,6 +18,7 @@
 	</style>
  </head>
  <body>
+	 <a href="/logout.php">Logout</a>
   <h1>Conexión establecida</h1>
 	<table border="1">
 	<tr>
@@ -50,7 +51,6 @@
 	msqli_close($db);
 	?>
 	</table>
-	 <a href="/logout.php">Logout</a>
  </body>
 </html>
 
