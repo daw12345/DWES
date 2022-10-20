@@ -35,5 +35,6 @@ mysqli_close($db);
 
 <input type="submit" value="Comentar">
 </form>
+ <a href="/logout.php">Logout</a>
 </body>
 </html>
