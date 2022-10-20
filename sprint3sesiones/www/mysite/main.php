@@ -49,6 +49,7 @@
 	}
 	msqli_close($db);
 	?>
+	<a href="/logout.php">Logout</a>
 	</table>
  </body>
 </html>
