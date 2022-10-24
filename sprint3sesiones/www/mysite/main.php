@@ -14,7 +14,7 @@
 
 	}
 	.ima:hover{
-	transition: 2.5s all ease-in-out;
+	transition: 1s all ease-in-out;
 	transform:scale(0.9);
 	border: 5px solid green;
 	}
