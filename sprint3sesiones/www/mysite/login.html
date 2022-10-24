@@ -20,7 +20,7 @@ function validarFormulario(evento) {
     return;
   }
   var clave = document.getElementById('clave').value;
-  if (clave.length < 6) {
+  if (clave.length == 0) {
     alert('La clave no es válida');
     return;
   }
