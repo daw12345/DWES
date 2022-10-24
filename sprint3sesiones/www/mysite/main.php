@@ -11,10 +11,17 @@
 	.ima{
 	width: 80%;
 	height: 80%;
+
+	}
+	.ima:hover{
+	animation: fadeIn 5s;
+	transform:scale(0.9);
+	opacity: 0,5;
 	}
 	.centrado{
 	text-align: center;
 	}
+	
 	</style>
  </head>
  <body>
