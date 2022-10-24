@@ -16,7 +16,7 @@
 	.ima:hover{
 	transition: 2.5s all ease-in-out;
 	transform:scale(0.9);
-	border-color: 5px solid green;
+	border: 5px solid green;
 	}
 	.centrado{
 	text-align: center;
