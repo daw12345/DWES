@@ -14,9 +14,9 @@
 
 	}
 	.ima:hover{
-	animation: fadeIn 5s;
+	transition: 5s all ease-in-out;
 	transform:scale(0.9);
-	opacity: 0,5;
+	opacity: 0.8;
 	}
 	.centrado{
 	text-align: center;
