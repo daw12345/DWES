@@ -26,7 +26,8 @@
  </head>
  <body>
 	 <a href="/logout.php">Logout</a>
-  <h1>Conexión establecida</h1>
+	 <a href="/cambiarcontraseña.php">Modificar contraseña</a>
+  
 	<table border="1">
 	<tr>
 	<th>Id</th>
