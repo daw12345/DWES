@@ -25,6 +25,7 @@ if (mysqli_num_rows($result) > 0) {
     } else {
         echo '<p>Contraseña incorrecta</p>';
     }
+    
 } else {
     echo '<p>Usuario no encontrado con ese email</p>';
 }
