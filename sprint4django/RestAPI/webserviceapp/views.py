@@ -16,6 +16,8 @@ def devolver_peliculas(request):
 		diccionario = {}
 		diccionario['id'] = fila_sql.id
 		diccionario['nombre'] = fila_sql.nombre
+		diccionario['imagen'] = fila_sql.url_imagen
+		diccionario['valoracion'] = fila_sql.valoracion
 		diccionario['sinopsis'] = fila_sql.sinopsis
 		respuesta_final.append(diccionario)
 	return JsonResponse(respuesta_final, safe=False)
@@ -32,6 +34,8 @@ def devolver_pelicula_por_id(request, id_solicitado):
 	resultado = {
 		'id' : pelicula.id,
 		'nombre' : pelicula.nombre,
+		'imagen' : pelicula.url_imagen,
+		'valoracion' : pelicula.valoracion,
 		'sinopsis' : pelicula.sinopsis,
 		'comentarios' : lista_comentarios
 	}
