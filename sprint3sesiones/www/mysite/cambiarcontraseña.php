@@ -9,14 +9,14 @@ $p_ant = $_POST['pass1'];
 $p_nueva = $_POST['pass2'];
 $rep_p_nueva = $_POST['pass3'];
 
-$query = "SELECT contraseña FROM tUsuarios WHERE id=".$user;
+$query = "SELECT contrasena FROM tUsuarios WHERE id=".$user;
 $result = mysqli_query($db, $query) or die('Query error');
 
 if (mysqli_num_rows($result) > 0) {
     $only_row = mysqli_fetch_array($result);
     if ($only_row[0] == $p_ant) {
         if ($rep_p_nueva == $p_nueva) {
-            $query2 = "UPDATE tUsuarios SET contraseña = '".$new_pass."' where id =".$user;
+            $query2 = "UPDATE tUsuarios SET contrasena = '".$p_nueva."' where id =".$user;
             $result = mysqli_query($db, $query2) or die('Query error');
             echo '<p>Contraseña cambiada</p>';
         } else {
